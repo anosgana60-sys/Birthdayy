@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Chumeissa 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #ffffff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      max-width: 700px;
+      width: 90%;
+      padding: 25px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .decor {
+      font-size: 24px;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+
+    h1 {
+      color: #ff5fa2;
+      margin-bottom: 10px;
+    }
+
+    .message {
+      color: #444;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .photo-box {
+      margin: 20px auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #ffb6d5;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      background: #fff0f6;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cats {
+      font-size: 22px;
+      margin-top: 15px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px;
+      background: #ff5fa2;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #ff2f8b;
+    }
+
+    .surprise {
+      display: none;
+      margin-top: 15px;
+      font-size: 20px;
+      color: #ff2f8b;
+      animation: pop 0.5s ease;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="decor">🎀🐱✨</div>
+
+    <h1>Happy Birthday, Chumeissa! 🎉💖</h1>
+
+    <div class="photo-box">
+      <img src="chumeissa.jpg" alt="Chumeissa Photo">
+    </div>
+
+    <p class="message">
+      Happy Birthday to my dearest friend 💗<br>
+      May your days be filled with smiles, joy, and beautiful moments.<br>
+      You deserve all the happiness in the world today and always. 🐱🌸
+    </p>
+
+    <button onclick="showSurprise()">Click for a surprise 🎁</button>
+
+    <div id="surprise" class="surprise">
+      🎉✨ You are amazing! Never forget how special you are 💖🐱 ✨🎉
+    </div>
+
+    <div class="cats">🐱🐾💗🎉🐱✨</div>
+
+    <footer>From your friend, Anes 🤍</footer>
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+</body>
+</html>
